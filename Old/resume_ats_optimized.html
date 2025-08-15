@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Hamza Idrees - Senior Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 11px;
+            line-height: 1.15;
+            color: #333;
+            background: white;
+        }
+        
+        .resume-container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+            min-height: 11in;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 16px;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 10px;
+            color: #555;
+            line-height: 1.4;
+        }
+        
+        .contact-info a {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .main-content {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .left-column {
+            flex: 1;
+        }
+        
+        .right-column {
+            flex: 1;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-transform: uppercase;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .job {
+            margin-bottom: 15px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .job-company {
+            font-weight: bold;
+            color: #34495e;
+        }
+        
+        .job-date {
+            font-size: 10px;
+            color: #7f8c8d;
+        }
+        
+        .job-location {
+            font-size: 10px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .job-description {
+            margin-top: 5px;
+            line-height: 1.3;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .skill-category {
+            margin-bottom: 10px;
+        }
+        
+        .skill-category-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+        
+        .skill-list {
+            font-size: 10px;
+            color: #555;
+        }
+        
+        .project {
+            margin-bottom: 12px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+        
+        .project-date {
+            font-size: 10px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        
+        .project-description {
+            font-size: 10px;
+            line-height: 1.3;
+        }
+        
+        .education-item {
+            margin-bottom: 10px;
+        }
+        
+        .education-degree {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .education-school {
+            color: #34495e;
+        }
+        
+        .education-details {
+            font-size: 10px;
+            color: #7f8c8d;
+        }
+        
+        .achievement {
+            margin-bottom: 8px;
+            font-size: 10px;
+            line-height: 1.3;
+        }
+        
+        .language-item {
+            margin-bottom: 5px;
+        }
+        
+        .language-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .language-level {
+            font-size: 10px;
+            color: #7f8c8d;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 3px;
+        }
+        
+        .highlight {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="name">Mohammad Hamza Idrees</div>
+            <div class="title">Senior Software Engineer – Backend (PHP, Laravel, AWS, Microservices)</div>
+            <div class="contact-info">
+                hamzaidrees41@gmail.com | +966 53 4665570 | Jeddah, Saudi Arabia<br>
+                linkedin.com/in/hamzaidrees41 | Transferable Iqama
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Professional Experience -->
+                <div class="section">
+                    <div class="section-title">Professional Experience</div>
+                    
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Senior Software Engineer</div>
+                                <div class="job-company">Prima Consulting</div>
+                            </div>
+                            <div class="job-date">05/2024 - Present</div>
+                        </div>
+                        <div class="job-location">Dubai, Remote</div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Implemented <span class="highlight">serverless architecture</span> with AWS, automating workflows and reducing operational costs by <span class="highlight">30%</span></li>
+                                <li>Built scalable cloud solutions using <span class="highlight">NestJS, Laravel</span> and AWS services including <span class="highlight">Lambda, Step Functions, and S3</span></li>
+                                <li>Designed efficient data storage and retrieval solutions on AWS, ensuring secure, high-speed access for dynamic application needs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Software Engineer</div>
+                                <div class="job-company">KraveMart - Grocery Delivery</div>
+                            </div>
+                            <div class="job-date">01/2022 - 04/2024</div>
+                        </div>
+                        <div class="job-location">On-Site</div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Developed multiple dashboards to streamline workflows, reducing customer service response times and improving operational efficiency</li>
+                                <li>Developed the DAS with <span class="highlight">Google Maps API</span> to define store-specific boundaries, enabling precise, location-based customer service</li>
+                                <li>Optimized <span class="highlight">API response times by 30%</span> through code refinement and advanced indexing strategy</li>
+                                <li>Leveraged <span class="highlight">Redis</span> for microservices data exchange, enhancing performance and scalability across services</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Associate Software Engineer</div>
+                                <div class="job-company">Golootlo</div>
+                            </div>
+                            <div class="job-date">01/2021 - 12/2021</div>
+                        </div>
+                        <div class="job-location">On-Site</div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Led the migration of <span class="highlight">Slim APIs to Lumen</span>, enhancing app performance and scalability by <span class="highlight">40%</span></li>
+                                <li>Utilized a modular approach to develop clean and secure code within a <span class="highlight">microservices architecture</span></li>
+                                <li>Integrated <span class="highlight">Elasticsearch</span> for improved search functionality, enhancing customer experience</li>
+                                <li>Developed comprehensive reporting and analytics modules, enabling data-driven decision-making</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="section">
+                    <div class="section-title">Projects</div>
+                    
+                    <div class="project">
+                        <div class="project-title">Deen-ul-Islam Application</div>
+                        <div class="project-date">06/2022 - Present</div>
+                        <div class="project-description">
+                            Developed a free Android app dedicated to social responsibility, offering Quranic translations, recitations, Hadiths for Sunnah, Islamic history, and prayer timings. Created comprehensive back office system for efficient app management and implemented robust APIs for seamless data integration.
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">Help Save a Life</div>
+                        <div class="project-date">06/2021 - 05/2022</div>
+                        <div class="project-description">
+                            Designed a charity web app enhancing the donation process with streamlined workflows and real-time impact tracking for transparency. Developed donor profiles to improve engagement and trust, ensuring donors have visibility into the causes they support.
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">Saphire E-Commerce</div>
+                        <div class="project-date">01/2021 - 09/2021</div>
+                        <div class="project-description">
+                            Optimized clothing sales and improved user experience through new features, bug fixes, and MySQL integration.
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">Hotel Management System</div>
+                        <div class="project-date">03/2019 - 01/2020</div>
+                        <div class="project-description">
+                            Developed a web application to optimize hotel operations, streamline data management, and enhance customer access, integrating comprehensive features for improved user experience.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Skills -->
+                <div class="section">
+                    <div class="section-title">Skills</div>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <div class="skill-category-title">Programming Languages</div>
+                            <div class="skill-list">PHP, JavaScript, Node.js</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <div class="skill-category-title">Frameworks & Libraries</div>
+                            <div class="skill-list">Laravel, NestJS, Lumen, Livewire, jQuery, Ajax</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <div class="skill-category-title">Cloud & DevOps</div>
+                            <div class="skill-list">AWS Lambda, Step Functions, S3, EC2, RDS, Serverless Architecture, Firebase</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <div class="skill-category-title">Databases</div>
+                            <div class="skill-list">MySQL, PostgreSQL, MongoDB, Redis, Elasticsearch</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <div class="skill-category-title">Tools & Practices</div>
+                            <div class="skill-list">Git, Docker, CI/CD, Agile, REST API Development, GraphQL, Deployment</div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <div class="skill-category-title">Architecture</div>
+                            <div class="skill-list">Microservices, API Development, Scalable Solutions</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="section">
+                    <div class="section-title">Education</div>
+                    <div class="education-item">
+                        <div class="education-degree">Masters in Data Science</div>
+                        <div class="education-school">NED University of Engineering & Technology</div>
+                        <div class="education-details">04/2021 - 07/2023 | 3.29 GPA</div>
+                    </div>
+                </div>
+
+                <!-- Achievements & Certifications -->
+                <div class="section">
+                    <div class="section-title">Achievements & Certifications</div>
+                    <div class="achievement">
+                        • Recognized as the first Employee of the Month in the tech department at KraveMart for exceptional performance and contributions to the team
+                    </div>
+                    <div class="achievement">
+                        • Teaching Assistant (Certification) - Instructed students in digital logic design labs (01/2020 - 06/2020)
+                    </div>
+                    <div class="achievement">
+                        • Coders Cup Speed Programming (2016, 2018)
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="section">
+                    <div class="section-title">Languages</div>
+                    <div class="language-item">
+                        <div class="language-name">English</div>
+                        <div class="language-level">Professional Working Proficiency</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-name">Arabic</div>
+                        <div class="language-level">Elementary Proficiency</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

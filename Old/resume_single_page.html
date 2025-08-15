@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Hamza Idrees - Senior Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+            background: #fff;
+            font-size: 11px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+        }
+        
+        .name {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+        
+        .title {
+            font-size: 1.1em;
+            color: #34495e;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .summary {
+            font-size: 0.9em;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 10px;
+            line-height: 1.3;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 5px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            font-size: 0.8em;
+            color: #555;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        
+        .left-column {
+            grid-column: 1;
+        }
+        
+        .right-column {
+            grid-column: 2;
+        }
+        
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+        }
+        
+        .job {
+            margin-bottom: 15px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-size: 1em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .company {
+            font-weight: 500;
+            color: #34495e;
+            font-size: 0.9em;
+        }
+        
+        .job-meta {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        
+        .job-tasks {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-tasks li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 3px;
+            line-height: 1.2;
+            font-size: 0.85em;
+        }
+        
+        .job-tasks li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .skill-category {
+            margin-bottom: 10px;
+        }
+        
+        .skill-category h4 {
+            color: #34495e;
+            margin-bottom: 3px;
+            font-size: 0.9em;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        
+        .skill-tag {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+        
+        .project {
+            margin-bottom: 10px;
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 0.9em;
+        }
+        
+        .project-date {
+            font-size: 0.75em;
+            color: #7f8c8d;
+        }
+        
+        .project-description {
+            color: #555;
+            line-height: 1.2;
+            font-size: 0.8em;
+        }
+        
+        .education-item {
+            margin-bottom: 10px;
+        }
+        
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 0.9em;
+        }
+        
+        .school {
+            color: #34495e;
+            font-size: 0.8em;
+        }
+        
+        .education-meta {
+            font-size: 0.75em;
+            color: #7f8c8d;
+        }
+        
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .achievements li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 5px;
+            line-height: 1.2;
+            font-size: 0.8em;
+        }
+        
+        .achievements li:before {
+            content: "🏆";
+            position: absolute;
+            left: 0;
+            font-size: 0.7em;
+        }
+        
+        .languages {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .language-name {
+            font-weight: 500;
+            color: #2c3e50;
+            font-size: 0.85em;
+        }
+        
+        .language-level {
+            font-size: 0.75em;
+            color: #7f8c8d;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                max-width: none;
+                font-size: 10px;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .main-content {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Mohammad Hamza Idrees</div>
+        <div class="title">Senior Software Engineer</div>
+        <div class="summary">
+            Backend developer with experience in cloud technologies and API integration. Skilled in creating scalable, 
+            secure solutions for multi-million-user platforms using microservices architecture to drive innovation.
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">📧 hamzaidrees41@gmail.com</div>
+            <div class="contact-item">📱 +966 53 4665570</div>
+            <div class="contact-item">📍 Jeddah, Saudi Arabia, Transferable Iqama</div>
+            <div class="contact-item">🔗 linkedin.com/in/hamzaidrees41</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-column">
+            <div class="section">
+                <div class="section-title">WORK EXPERIENCE</div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Senior Software Engineer</div>
+                            <div class="company">Prima Consulting</div>
+                        </div>
+                        <div class="job-meta">05/2024 - Present | Dubai, Remote</div>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Implemented serverless architecture with AWS, automating workflows, reducing operational costs by 30%</li>
+                        <li>Built scalable cloud solutions using Nest JS, Laravel and AWS services like Lambda, Step Functions, and S3</li>
+                        <li>Designed efficient data storage and retrieval solutions on AWS, ensuring secure, high-speed access</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Software Engineer</div>
+                            <div class="company">KraveMart - Grocery Delivery</div>
+                        </div>
+                        <div class="job-meta">01/2022 - 04/2024 | On-Site</div>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Developed multiple dashboards to streamline workflows, reducing customer service response times</li>
+                        <li>Developed DAS with Google Maps API to define store-specific boundaries for location-based service</li>
+                        <li>Optimized API response times by 30% through code refinement and advanced indexing strategy</li>
+                        <li>Leveraged Redis for microservices data exchange, enhancing performance and scalability</li>
+                        <li>Led migration of Slim APIs to Lumen, enhancing app performance and scalability by 40%</li>
+                        <li>Integrated Elasticsearch for improved search functionality on the app's home page</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Associate Software Engineer</div>
+                            <div class="company">Golootlo</div>
+                        </div>
+                        <div class="job-meta">01/2021 - 12/2021 | On-Site</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">PROJECTS</div>
+                
+                <div class="project">
+                    <div class="project-header">
+                        <div class="project-title">Deen-ul-Islam Application</div>
+                        <div class="project-date">06/2022 - Present</div>
+                    </div>
+                    <div class="project-description">
+                        Developed free Android app for social responsibility, offering Quranic translations, recitations, Hadiths, 
+                        Islamic history, and prayer timings. Created comprehensive back office system and robust APIs.
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <div class="project-title">Help Save a Life</div>
+                        <div class="project-date">06/2021 - 05/2022</div>
+                    </div>
+                    <div class="project-description">
+                        Designed charity web app enhancing donation process with streamlined workflows and real-time impact tracking. 
+                        Developed donor profiles for improved engagement and trust.
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <div class="project-title">Saphire E-Commerce</div>
+                        <div class="project-date">01/2021 - 09/2021</div>
+                    </div>
+                    <div class="project-description">
+                        Optimized clothing sales and improved user experience through new features, bug fixes, and MySQL integration.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="section">
+                <div class="section-title">SKILLS</div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Programming</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Nest.js</span>
+                            <span class="skill-tag">Lumen</span>
+                            <span class="skill-tag">Livewire</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Cloud & DevOps</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Lambda</span>
+                            <span class="skill-tag">EC2</span>
+                            <span class="skill-tag">S3</span>
+                            <span class="skill-tag">RDS</span>
+                            <span class="skill-tag">Serverless</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Databases</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Elasticsearch</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>APIs & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">REST API</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Microservices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">ACHIEVEMENTS</div>
+                <ul class="achievements">
+                    <li>Employee of the Month at KraveMart tech department for exceptional performance</li>
+                    <li>Teaching Assistant Certification (01/2020 - 06/2020)</li>
+                    <li>Coders Cup Speed Programming (2016, 2018)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">EDUCATION</div>
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <div class="degree">Masters in Data Science</div>
+                            <div class="school">NED University of Engineering & Technology</div>
+                        </div>
+                        <div class="education-meta">04/2021 - 07/2023 | 3.29 GPA</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">LANGUAGES</div>
+                <div class="languages">
+                    <div class="language-item">
+                        <span class="language-name">English</span>
+                        <span class="language-level">Professional</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">Arabic</span>
+                        <span class="language-level">Elementary</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

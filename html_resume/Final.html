@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad Hamza Idrees - Senior Software Engineer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Calibri", "Arial", sans-serif;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #333;
+        background: white;
+        margin: 0;
+        padding: 0;
+      }
+
+      .resume-container {
+        width: 210mm;
+        height: 297mm;
+        margin: 0 auto;
+        padding: 3mm 5mm 2mm 5mm; /* top right bottom left */
+        background: white;
+        box-sizing: border-box;
+      }
+
+      @media print {
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        .resume-container {
+          width: 210mm;
+          height: 297mm;
+          margin: 0;
+          padding: 2mm 5mm 2mm 5mm; /* top right bottom left */
+          box-shadow: none;
+        }
+
+        @page {
+          size: A4;
+          margin: 0;
+        }
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 2px;
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 2px;
+      }
+
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 2px;
+      }
+
+      .title {
+        font-size: 16px;
+        color: #34495e;
+        margin-bottom: 3px;
+      }
+
+      .contact-info {
+        font-size: 12px;
+        color: #555;
+        line-height: 1.3;
+      }
+
+      .contact-info a {
+        color: #555;
+        text-decoration: none;
+      }
+
+      .section {
+        margin-bottom: 6px;
+      }
+
+      .section-title {
+        font-size: 14px;
+        font-weight: bold;
+        color: #2c3e50;
+        text-transform: uppercase;
+        border-bottom: 1px solid #bdc3c7;
+        padding-bottom: 3px;
+        margin-bottom: 5px;
+      }
+
+      .job {
+        margin-bottom: 5px;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 3px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 12px;
+      }
+
+      .job-company {
+        font-weight: bold;
+        color: #34495e;
+        font-size: 12px;
+      }
+
+      .job-date {
+        font-size: 11px;
+        color: #7f8c8d;
+      }
+
+      .job-location {
+        font-size: 11px;
+        color: #7f8c8d;
+        font-style: italic;
+        margin-bottom: 3px;
+      }
+
+      .job-description {
+        line-height: 1;
+      }
+
+      .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .skill-category {
+        margin-bottom: 8px;
+      }
+
+      .skill-category-title {
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 3px;
+        font-size: 12px;
+      }
+
+      .skill-list {
+        font-size: 12px;
+        color: #555;
+        line-height: 1.4;
+      }
+
+      .project {
+        margin-bottom: 10px;
+      }
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .project-title {
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 12px;
+      }
+
+      .project-date {
+        font-size: 11px;
+        color: #7f8c8d;
+        margin-bottom: 3px;
+      }
+
+      .project-description {
+        font-size: 11px;
+        line-height: 1.4;
+      }
+
+      .education-item {
+        margin-bottom: 8px;
+      }
+
+      .education-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 3px;
+      }
+
+      .education-degree {
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 12px;
+      }
+
+      .education-school {
+        color: #34495e;
+        font-size: 12px;
+      }
+
+      .education-details {
+        font-size: 12px;
+        color: #7f8c8d;
+      }
+
+      .achievement {
+        margin-bottom: 8px;
+        font-size: 12px;
+        line-height: 1.4;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 15px;
+      }
+
+      li {
+        font-size: 12px;
+        line-height: 1.4;
+      }
+
+      .highlight {
+        color: #2c3e50;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume-container">
+      <!-- Header Section -->
+      <div class="header">
+        <div class="name">Mohammad Hamza Idrees</div>
+        <div class="title">
+          Senior Software Engineer – Backend (PHP, Laravel, AWS, Microservices)
+        </div>
+        <div class="contact-info">
+          hamzaidrees41@gmail.com | +966 53 4665570 | Jeddah, Saudi Arabia<br />
+          linkedin.com/in/hamzaidrees41 | Transferable Iqama
+        </div>
+      </div>
+
+      <!-- Professional Summary -->
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="achievement">
+          Results-driven Senior Software Engineer with 5 years of backend
+          development experience, specializing in PHP, Laravel, AWS, and
+          microservices architecture. Proven ability to deliver scalable,
+          high-performance solutions, optimize application efficiency by 30-40%,
+          and lead end-to-end technical implementations. Strong expertise in
+          cloud-native development, API design, and database optimization. Holds
+          a Master's degree in Data Science with understanding of data-driven
+          development approaches.
+        </div>
+      </div>
+
+      <!-- Professional Experience -->
+      <div class="section">
+        <div class="section-title">Professional Experience</div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Senior Software Engineer</div>
+              <div class="job-company">Prima Consulting</div>
+            </div>
+            <div>
+              <div class="job-date">05/2024 - Present</div>
+              <div class="job-location">Dubai, Remote</div>
+            </div>
+          </div>
+          <div class="job-description">
+            <ul>
+              <li>
+                Implemented serverless infrastructure utilizing
+                <span class="highlight"
+                  >AWS Lambda, Step Functions, API Gateway, and S3</span
+                >, resulting in 30% reduction in operational costs
+              </li>
+              <li>
+                Developed scalable and efficient system using
+                <span class="highlight">Laravel </span> and Python, implementing
+                RESTful APIs with optimized performance and scalability
+              </li>
+              <li>
+                Designed and optimized distributed database systems using
+                <span class="highlight">PostgreSQL, and Redis</span>,
+                implementing advanced caching strategies and database indexing
+                that improved query performance by 35% and reduced data
+                retrieval latency
+              </li>
+              <li>
+                Established comprehensive coding standards and development
+                practices, conducting code reviews and implementing Agile
+                methodologies that increased team productivity and reduced bug
+                rates by 20%
+              </li>
+              <li>
+                Developed robust health endpoint system using
+                <span class="highlight">AWS EventBridge and SNS</span> for
+                automated email notifications on CPU max usage and system
+                downtime, ensuring proactive system monitoring and rapid
+                incident response
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Software Engineer</div>
+              <div class="job-company">KraveMart - Grocery Delivery</div>
+            </div>
+            <div>
+              <div class="job-date">01/2022 - 04/2024</div>
+              <div class="job-location">On-Site</div>
+            </div>
+          </div>
+          <div class="job-description">
+            <ul>
+              <li>
+                Developed and maintained
+                <span class="highlight">RESTful APIs</span> for order management
+                and location services, resolving production issues to
+                ensure platform stability and user experience
+              </li>
+              <li>
+                Built real-time analytics dashboards using
+                <span class="highlight">Laravel</span> and
+                <span class="highlight">Livewire</span>, providing insights that
+                reduced customer service response times by 30%
+              </li>
+              <li>
+                Implemented Delivery Area System using
+                <span class="highlight">Google Maps API</span>,
+                <span class="highlight">MySQL</span>, and
+                <span class="highlight">Redis</span>, processing 50,000+ daily
+                location queries and enhancing delivery accuracy by 40%
+              </li>
+              <li>
+                Architected scalable rider management system with
+                <span class="highlight">Node.js</span>,
+                <span class="highlight">Socket.io</span>, and
+                <span class="highlight">MongoDB</span>, featuring real-time GPS
+                tracking, route optimization, and order status updates,
+                improving delivery efficiency
+              </li>
+              <li>
+                Integrated <span class="highlight">PayFast</span> and
+                <span class="highlight">Checkout.com</span> payment gateways and
+                third-party APIs, optimizing backend performance and ensuring
+                reliable transaction processing for enhanced user experience
+              </li>
+              <li>
+                Collaborated with cross-functional teams throughout product
+                development lifecycle, from SaaS to in-house solutions, focusing
+                on order processing optimization and system scalability for
+                millions of users
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Associate Software Engineer</div>
+              <div class="job-company">Golootlo</div>
+            </div>
+            <div>
+              <div class="job-date">01/2021 - 12/2021</div>
+              <div class="job-location">On-Site</div>
+            </div>
+          </div>
+          <div class="job-description">
+            <ul>
+              <li>
+                Successfully migrated Slim APIs to Lumen within a microservices
+                architecture, implementing
+                <span class="highlight">RESTful API</span> standards and
+                <span class="highlight">JWT authentication</span>, resulting in
+                25% improvement in system performance and security
+              </li>
+              <li>
+                Utilized a modular approach to write clean, maintainable, and
+                secure code using <span class="highlight">Laravel </span>and
+                <span class="highlight">MySQL</span>, creating reusable
+                components across multiple services
+              </li>
+              <li>
+                Implemented <span class="highlight">Elasticsearch</span> for
+                improved search functionality with advanced query optimization,
+                enhancing search speed by 20% on mobile app
+              </li>
+              <!-- <li>
+                Developed a comprehensive reporting and summary module ,
+                creating interactive dashboards for operational insights and
+                data-driven decision-making
+              </li> -->
+              <li>
+                Built the core QR code scanning
+                <span class="highlight">microservice</span>, the main USP of
+                Golootlo platform, enabling users to scan QR codes for product
+                information and seamless experience, along with utilities
+                <span class="highlight">microservice</span> for SMS and email
+                notifications to ensure reliable communication for order updates
+                and promotions
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="skill-category">
+          <div class="skill-list">
+            <strong>Programming Languages:</strong> PHP, JavaScript, Node.js<br />
+            <strong>Frameworks & Libraries:</strong> Laravel, Lumen, Livewire,
+            jQuery, AJAX<br />
+            <strong>Cloud & DevOps:</strong> AWS (EC2, S3, RDS, Lambda, SNS,
+            Step Functions, EventBridge etc), Serverless Architecture, Docker,
+            Firebase<br />
+            <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis,
+            Elasticsearch<br />
+            <strong>Tools & Practices:</strong> Git, REST API Development,
+            GraphQL, Scalable System Design, Agile Methodologies<br />
+            <strong>Soft Skills:</strong> Problem Solving, Requirements
+            Analysis, Team Leadership, Cross-functional Collaboration, Time
+            Management
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <div class="section-title">Projects</div>
+
+        <div class="project">
+          <div class="project-header">
+            <div class="project-title">Vatify - ZATCA Integration System</div>
+            <div class="project-date">12/2024 - 02/2025</div>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                Developed a comprehensive VAT compliance system from scratch,
+                integrating with
+                <span class="highlight">ZATCA (Saudi Tax Authority)</span> using
+                <span class="highlight">SOAP APIs</span> for automated tax
+                reporting and invoice generation
+              </li>
+              <li>
+                Successfully integrated the system into a live store
+                environment, processing and posting Q1 tax reports to ZATCA,
+                demonstrating real-world implementation and compliance
+              </li>
+              <li>
+                Built secure RESTful endpoints for data submission to ZATCA,
+                implementing proper authentication and data validation for
+                regulatory compliance
+              </li>
+              <li>
+                Deployed the complete system on
+                <span class="highlight">DigitalOcean</span>, handling end-to-end
+                development, testing, and production deployment with error
+                handling API interactions
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-header">
+            <div class="project-title">Expert Ads</div>
+            <div class="project-date">01/2025 - 05/2025</div>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                Built a classified ads platform using
+                <span class="highlight">Laravel</span> and
+                <span class="highlight">MySQL</span>, focusing on user-friendly
+                interfaces and secure ad posting functionality
+              </li>
+              <li>
+                Implemented RESTful APIs and backend systems for efficient data
+                management and platform performance optimization
+              </li>
+              <li>
+                Enhanced search functionality and user engagement through
+                advanced listing features with
+                <span class="highlight">Redis</span> caching
+              </li>
+              <li>
+                Integrated <span class="highlight">payment gateway</span> and
+                <span class="highlight">in-app purchase</span> systems using
+                <span class="highlight">Pub/Sub architecture</span> for both
+                Android and iOS platforms, ensuring secure transaction
+                processing and real-time payment status updates
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="project">
+          <div class="project-header">
+            <div class="project-title">Deen-ul-Islam Application</div>
+            <div class="project-date">06/2022 - 06/2024</div>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                Developed a comprehensive Islamic learning Android application
+                using <span class="highlight">Node.js</span> and
+                <span class="highlight">MongoDB</span>, featuring Quranic
+                translations, audio recitations, Hadith collections, Islamic
+                history, and accurate prayer time calculations
+              </li>
+              <li>
+                Designed and deployed scalable RESTful APIs on
+                <span class="highlight">AWS cloud infrastructure</span>,
+                enabling efficient content management and real-time data
+                synchronization across multiple user devices
+              </li>
+              <li>
+                Built robust backend services with optimized database queries
+                and efficient caching strategies, ensuring fast response times
+                and seamless content delivery across multiple Islamic content
+                categories
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="project">
+          <div class="project-header">
+            <div class="project-title">DAS - Delivery Area System</div>
+            <div class="project-date">02/2022 - 08/2022</div>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                Developed a comprehensive delivery area management system using
+                <span class="highlight">Laravel</span> and
+                <span class="highlight">Google Maps API</span> to define
+                store-specific boundaries, handling daily traffic of millions of
+                users
+              </li>
+              <li>
+                Implemented location-based customer service features using
+                <span class="highlight">MySQL</span> and
+                <span class="highlight">Redis</span> enabling precise delivery
+                zone management
+              </li>
+              <li>
+                Integrated advanced geolocation services with
+                <span class="highlight">RESTful APIs</span> to enhance delivery
+                efficiency and reduce operational costs by 25%
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="education-item">
+          <div class="education-header">
+            <div>
+              <div class="education-degree">
+                Master of Science in Data Science
+              </div>
+              <div class="education-school">
+                NED University of Engineering & Technology
+              </div>
+            </div>
+            <div class="education-details">04/2021 - 07/2023</div>
+          </div>
+        </div>
+        <div class="education-item">
+          <div class="education-header">
+            <div>
+              <div class="education-degree">
+                Bachelor of Science in Computer Science
+              </div>
+              <div class="education-school">
+                National University of Computer and Emerging Sciences
+              </div>
+            </div>
+            <div class="education-details">06/2016 - 12/2020</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements & Certifications -->
+      <div class="section">
+        <div class="section-title">Achievements & Certifications</div>
+        <ul>
+          <li>
+            Awarded Employee of the Month recognition in the technology
+            department at KraveMart for technical contributions and leadership
+            excellence
+          </li>
+          <li>
+            Teaching Assistant Certification - Mentored undergraduate students
+            in Digital Logic Design laboratory sessions (01/2020 - 06/2020),
+            providing technical guidance for circuit design and implementation
+            projects
+          </li>
+          <li>
+            Advanced to final round in Coders Cup Speed Programming Competition
+            (2018), advanced problem-solving skills and
+            algorithmic thinking under time constraints
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

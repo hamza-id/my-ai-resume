@@ -1,0 +1,185 @@
+Mohammad Hamza Idrees
+Senior Software Engineer
+Backend developer with experience in cloud technologies and API integration. Skilled in creating scalable,
+secure solutions for multi-million-user platforms using microservices architecture to drive innovation.
+
+hamzaidrees41@gmail.com
+
++966 53 4665570
+
+Jeddah, Saudi Arabia, Transferable Iqama
+
+linkedin.com/in/hamzaidrees41
+
+WORK EXPERIENCE
+
+SKILLS
+
+Senior Software Engineer
+Prima Consulting
+05/2024 - Present,
+
+Dubai, Remote
+
+Tasks
+
+Implemented serverless architecture with AWS,
+automating workﬂows, reducing operational costs by 30%,
+and signiﬁcantly enhancing system eﬃciency and
+scalability.
+Built scalable cloud solutions using Nest JS, Laravel and
+AWS services like Lambda, Step Functions, and S3.
+Designed eﬃcient data storage and retrieval solutions on
+AWS, ensuring secure, high-speed access for dynamic
+application needs.
+
+On-Site
+
+Tasks
+
+Developed multiple dashboards to streamline workﬂows,
+reducing customer service response times and improving
+operational eﬃciency.
+Developed the DAS with Google Maps API to deﬁne storespeciﬁc boundaries, enabling precise, location-based
+customer service from the nearest open store.
+Optimized API response times by 30% through code
+reﬁnement and an advanced indexing strategy, resulting in
+faster, more eﬃcient data handling.
+Leveraged Redis for microservices data exchange,
+enhancing performance and scalability across services.
+
+Associate Software Engineer
+Golootlo
+01/2021 - 12/2021,
+
+Laravel
+
+AWS
+
+Microservice
+
+Lambda
+Git
+
+MySql
+
+Livewire
+
+JavaScript
+Redis
+
+Deployment
+
+Nest JS
+
+Serverless Architecture
+
+Step Function
+Ajax
+
+Node JS
+
+EC2
+Lumen
+
+Elastic Search
+
+Firebase
+
+RDS
+
+API
+
+AWS S3
+
+Jquery
+MongoDb
+
+GraphQL
+
+Postgres
+
+PROJECTS
+Deen-ul-Islam Application (06/2022 - Present)
+
+Software Engineer
+KraveMart - Grocery Delivery
+01/2022 - 04/2024,
+
+PHP
+
+On-Site
+
+Developed Deen-ul-Islam , a free Android app dedicated to social
+responsibility, oﬀering Quranic translations, recitations, Hadiths for
+Sunnah, Islamic history, and prayer timings.
+Created a comprehensive back oﬃce system for eﬃcient app
+management and implemented robust APIs to facilitate seamless
+data integration and retrieval.
+
+Help save a life (06/2021 - 05/2022)
+Designed a charity web app for "Help Save a Life," enhancing the
+donation process with streamlined workﬂows and real-time impact
+tracking for transparency.
+Developed donor proﬁles to improve engagement and trust,
+ensuring donors have visibility into the causes they support.
+
+Saphire E-Commerce (01/2021 - 09/2021)
+Optimizing clothing sales and improving user experience through
+new features, bug ﬁxes, and MySQL integration.
+
+Hotel Managment System (03/2019 - 01/2020)
+Developed a web application to optimize hotel operations,
+streamline data management, and enhance customer access,
+integrating comprehensive features for an improved user
+experience.
+
+Tasks
+
+Led the migration of Slim APIs to Lumen, enhancing app
+performance and scalability by 40%, including utilities and
+QR code scanning features.
+
+ACHIEVEMENTS & CERTIFICATIONS
+
+Utilized a modular approach to develop clean and secure
+code within a microservices architecture.
+
+Recognized as the ﬁrst Employee of the Month in the tech department at
+Kravemart for exceptional performance and contributions to the team.
+
+Integrated Elasticsearch for improved search functionality
+on the app's home page, enhancing customer experience.
+
+Teaching Assistant (Certiﬁcation) (01/2020 - 06/2020)
+
+Developed comprehensive reporting and analytics modules
+, enabling data-driven decision-making.
+
+Employee of the Month (Krave Mart)
+
+Instructed students in digital logic design labs, providing guidance and
+support for hands-on learning.
+
+Coders Cup Speed Programming (2016, 2018)
+
+EDUCATION
+
+LANGUAGES
+
+Masters in Data Science
+NED University of Engineering & Technology
+
+English
+
+Arabic
+
+Professional Working Proﬁciency
+
+Elementary Proﬁciency
+
+04/2021 - 07/2023,
+
+3.29 GPA
+
+
